@@ -22,9 +22,9 @@ RUN apt-get install -y apache2
 ## Install MariaDB
 RUN apt-get install -y mariadb-server
 
-## Install PHP 8.0
+## Install PHP 5.6
 RUN apt-get install -y software-properties-common && add-apt-repository ppa:ondrej/php && apt-get update
-RUN apt-get install -y php8.0 libapache2-mod-php8.0 php8.0-common php8.0-gmp php8.0-curl php8.0-intl php8.0-mbstring php8.0-xmlrpc php8.0-gd php8.0-xml php8.0-cli php8.0-zip php8.0-mysql
+RUN apt-get install -y php5.6 libapache2-mod-php5.6 php5.6-common php5.6-gmp php5.6-curl php5.6-intl php5.6-mbstring php5.6-xmlrpc php5.6-gd php5.6-xml php5.6-cli php5.6-zip php5.6-mysql
 
 ## Install utilities
 RUN apt-get install -y git iputils-ping wget unzip curl nano
